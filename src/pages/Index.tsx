@@ -9,6 +9,20 @@ import Footer from "@/components/Footer";
 
 const Index = () => {
   useEffect(() => {
+    // Initialize theme from localStorage or system preference on page load
+    const initializeTheme = () => {
+      const storedTheme = localStorage.getItem("theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      
+      if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    };
+
+    initializeTheme();
+
     // Ensure smooth scrolling when navigating to hash links on page load
     if (window.location.hash) {
       const id = window.location.hash;
