@@ -154,7 +154,7 @@ const Contact = () => {
               <button
                 type="submit"
                 className={cn(
-                  "px-6 py-3 rounded-md bg-primary text-white font-medium",
+                  "px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium",
                   "transition-all duration-300 ease-in-out flex items-center justify-center gap-2",
                   "hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1"
                 )}

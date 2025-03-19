@@ -32,7 +32,7 @@ const Hero = () => {
               <a
                 href="#projects"
                 className={cn(
-                  "px-6 py-3 rounded-md bg-primary text-white font-medium",
+                  "px-6 py-3 rounded-md bg-primary text-primary-foreground font-medium",
                   "transition-all duration-300 ease-in-out",
                   "hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-1"
                 )}
@@ -42,7 +42,7 @@ const Hero = () => {
               <a
                 href="#contact"
                 className={cn(
-                  "px-6 py-3 rounded-md border border-border bg-secondary",
+                  "px-6 py-3 rounded-md border border-border bg-secondary text-secondary-foreground",
                   "transition-all duration-300 ease-in-out",
                   "hover:bg-secondary/70 hover:-translate-y-1"
                 )}
